@@ -2,5 +2,5 @@ POST http://localhost:3002/api/get-video
 content-type: application/json
 
 {
-  "videoUrl": "https://www.youtube.com/watch?v=FaO2Qwo98SU"
+  "videoUrl": "https://www.youtube.com/watch?v=3qjtin8uMP4"
 }

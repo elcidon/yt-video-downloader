@@ -38,7 +38,9 @@ router.post("/", async (req, res) => {
     const video = await ytdl(videoUrl, { format: "mp4" });
     let starttime;
 
-    video.pipe(fs.createWriteStream(`./public/${videoName}.mp4`));
+    video.pipe(
+      fs.createWriteStream(`./client/public/${videoName}.mp4`)
+    );
 
     video.once("response", () => {
       starttime = Date.now();
